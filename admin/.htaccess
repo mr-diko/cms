@@ -1,4 +1,0 @@
-AuthUserFile /var/www/html/cms/admin/.htpasswd
-AuthType Basic
-AuthName "restricted area"
-Require valid-user
