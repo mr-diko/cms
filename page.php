@@ -13,15 +13,15 @@ if (empty($_GET['page'])) {
 			WHERE slug = :slug
 		");
 
-	$page->execute(['slug' => $slug]);
+	$page->execute(array('slug' => $slug));
 
 	$page = $page->fetch(PDO::FETCH_ASSOC);
 
 	if($page) {
 		$page['created'] = new DateTime($page['created']);
 
-		if ($page['update']) {
-			$page['update'] = new DateTime($page['created']);
+		if ($page['updated']) {
+			$page['updated'] = new DateTime($page['updated']);
 		}
 	}
 

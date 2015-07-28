@@ -6,5 +6,12 @@
 
 		<?php echo e($page['body']); ?>
 
+		<p class="faded">
+			Created on <?php echo $page['created']->format('d-m-Y H:i'); ?>
+			<?php if ($page['updated']): ?>
+				Last updated <?php echo $page['updated']->format('d-m-Y H:i'); ?>
+			<?php endif; ?>
+		</p>
+
 	<?php endif; ?>
 <?php require VIEW_ROOT . '/templates/footer.php' ?>
