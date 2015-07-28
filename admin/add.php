@@ -21,4 +21,4 @@ if (!empty($_POST)) {
 	header('Location: ' . BASE_URL . '/admin/list.php');
 }
 
-require VIEW_ROOT . "\admin\add.php";
+require VIEW_ROOT . "/admin/add.php";

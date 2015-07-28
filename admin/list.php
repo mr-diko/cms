@@ -7,4 +7,4 @@ $pages = $db->query("
 		ORDER BY created DESC
 ")->fetchAll(PDO::FETCH_ASSOC);
 
-require VIEW_ROOT . "\admin\list.php";
+require VIEW_ROOT . "/admin/list.php";

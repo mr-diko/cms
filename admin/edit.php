@@ -48,4 +48,4 @@ $page = $page->fetch(PDO::FETCH_ASSOC);
 
 
 
-require VIEW_ROOT . "\admin\edit.php";
+require VIEW_ROOT . "/admin/edit.php";
